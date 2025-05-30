@@ -2,139 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Giftson | Developer Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Giftson | Portfolio</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #0f172a;
-      color: #f1f5f9;
+      background-color: #121212;
+      color: white;
     }
-    header {
-      text-align: center;
-      padding: 40px 20px;
+
+    .navbar {
+      background-color: #1e1e2f;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
-    header img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #38bdf8;
-      box-shadow: 0 0 20px #38bdf8;
-    }
-    h1 {
-      font-size: 2.5em;
-      color: #38bdf8;
-      margin: 15px 0 5px;
-    }
-    p.subtitle {
-      color: #cbd5e1;
-      font-size: 1.2em;
-    }
-    section {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
-      background: #1e293b;
-      border-radius: 12px;
-    }
-    h2 {
-      color: #fbbf24;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-    .skills-container {
+
+    .navbar ul {
+      list-style: none;
       display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
     }
-    .skill-box {
-      flex: 1 1 120px;
-      background: #334155;
-      padding: 15px;
-      border-radius: 10px;
+
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #00ffd5;
+    }
+
+    @media (max-width: 600px) {
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    section {
+      padding: 60px 20px;
       text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .skill-box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 15px #38bdf8;
-    }
-    .skill-box i {
-      font-size: 2em;
-      margin-bottom: 8px;
+      border-bottom: 1px solid #333;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="profile.jpg" alt="Giftson Profile Photo" />
-    <h1>Giftson</h1>
-    <p class="subtitle">Aspiring Software Engineer & Web Developer</p>
-  </header>
 
-  <section>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h1>Welcome to Giftson's Portfolio</h1>
+    <p>Full Stack Developer | Python | JavaScript | GitHub</p>
+  </section>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p style="font-size: 1.1em; line-height: 1.8; color: #cbd5e1;">
-      I'm <strong>Giftson</strong>, a passionate <strong>M.Sc. Computer Science</strong> student from Tamil Nadu. I enjoy building websites, writing code, and diving deep into technologies like <strong>Python</strong>, <strong>Java</strong>, and <strong>Data Science</strong>. My goal is to become a skilled <strong>software engineer</strong> and contribute to meaningful innovations in the tech world.
-    </p>
+    <p>I’m Giftson from Tamil Nadu. I'm passionate about web development and computer science.</p>
   </section>
 
-  <section>
+  <section id="skills">
     <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill-box">
-        <i class="bi bi-filetype-html" style="color: #e34c26;"></i>
-        <p>HTML</p>
-      </div>
-      <div class="skill-box">
-        <i class="bi bi-filetype-css" style="color: #264de4;"></i>
-        <p>CSS</p>
-      </div>
-      <div class="skill-box">
-        <i class="bi bi-filetype-js" style="color: #f0db4f;"></i>
-        <p>JavaScript</p>
-      </div>
-      <div class="skill-box">
-        <i class="bi bi-terminal" style="color: #61dafb;"></i>
-        <p>Python</p>
-      </div>
-      <div class="skill-box">
-        <i class="bi bi-github"></i>
-        <p>Git & GitHub</p>
-      </div>
-    </div>
+    <p>HTML, CSS, JavaScript, Python, Git, GitHub</p>
   </section>
 
-  <section>
-    <h2>Project</h2>
-    <div style="background: #1e293b; padding: 20px; border-radius: 10px;">
-      <h3 style="color: #38bdf8;">Bug Finding Report – SathyaNet.com</h3>
-      <p><strong>Company:</strong> Sathya Technosoft India Pvt. Ltd.</p>
-      <p><strong>Duration:</strong> Summer Internship – May 2025</p>
-      <p>This project involved identifying usability issues and bugs on the official fibernet website <a href="https://www.sathyanet.com" target="_blank">sathyanet.com</a> during a team internship. Our findings included:</p>
-      <ul>
-        <li>Outdated Disney Hotstar icon</li>
-        <li>Broken support email link</li>
-        <li>Incorrect QR code for bill payment</li>
-        <li>Unclear service descriptions</li>
-      </ul>
-      <p><strong>My Role:</strong> Bug reporting, usability analysis, documentation.</p>
-      <p><a href="#" target="_blank" style="color: #34d399;">View Full Report (PDF)</a></p>
-    </div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Bug Finding Internship at Sathya Technosoft — Analyzed and reported web bugs.</p>
   </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:giftson757@gmail.com">giftson757@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/giftson757" target="_blank">github.com/giftson757</a></p>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: giftson757@gmail.com | GitHub: github.com/giftson757</p>
   </section>
+
 </body>
 </html>
